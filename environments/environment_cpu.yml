@@ -1,0 +1,19 @@
+name: dl2
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python==3.10.4
+  - pip==22.0.4
+  - cpuonly=2.0
+  - pytorch==1.11.0
+  - pytorch-lightning==1.6.2
+  - torchmetrics==0.8.0
+  - torchvision==0.12.0
+  - lightning-bolts==0.5.0
+  - tensorboard==2.9.0  # Used for logging progress
+  - pip:
+    - matplotlib
+    - scipy==1.8.1
+    - wandb==0.12.16  # Used for logging progress
